@@ -58,25 +58,50 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
-/* COLOURS */
+  /* COLOURS */
+  /* primary */
+  --clr-strong-cyan: 172, 67%, 45%;
+  /* neutral */
+  --clr-very-dark-cyan: 183, 100%, 15%;
+  --clr-dark-grayish-cyan: 186, 14%, 43%;
+  --clr-grayish-cyan: 184, 14%, 56%;
+  --clr-light-grayish-cyan: 185, 41%, 84%;
+  --clr-very-light-grayish-cyan: 189, 41%, 97%;
+  --clr-white: 0, 0%, 100%;
 
   /* FONT FAMILY */
+  --ff-space-mono: 'Space Mono', monospace;
 
   /* FONT SIZE */
+  --fs-form-input: 1.5rem;
 
   /* FONT WEIGHT */
-
-  /* BREAKPOINTS */
+  --fw-bold: 700;
 }
 
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  background-color: hsl(var(--clr-light-grayish-cyan));
+  font-family: var(--ff-space-mono);
+  font-size: var(--fs-form-input);
+  font-weight: var(--fw-bold);
 }
 
 .main {
@@ -85,5 +110,5 @@ body {
   justify-content: center;
 
   width: 100vw;
-  min-height: 100vh;
+  min-height: 98vh;
 }
