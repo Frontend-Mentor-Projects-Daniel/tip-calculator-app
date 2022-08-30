@@ -1,0 +1,53 @@
+.tip-selector {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  border: none;
+}
+
+.tip-selector__title {
+  /* margin-top: 2rem; */
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  /* border: 1px solid black; */
+}
+
+input[type='radio'] {
+  display: inline-block;
+  opacity: 0;
+}
+
+input[type='radio'] + label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  background-color: hsl(var(--clr-very-dark-cyan));
+  color: hsl(var(--clr-white));
+  padding: 0 1.5rem;
+}
+
+input[type='radio']:focus + label {
+  box-shadow: 0 0px 8px hsl(var(--clr-strong-cyan));
+}
+
+input[type='radio']:checked + label {
+  background-color: hsl(var(--clr-strong-cyan));
+  color: hsl(var(--clr-very-dark-cyan));
+}
+
+input[type='number'],
+input[type='radio'] + label {
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+input[type='number'] {
+  background-color: hsl(var(--clr-very-light-grayish-cyan));
+  border: none;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
