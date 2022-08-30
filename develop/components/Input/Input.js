@@ -27,7 +27,7 @@ function define(html) {
       input.id = this.getAttribute('inputId');
       input.name = this.getAttribute('inputId');
 
-      amount.textContent = 0;
+      amount.textContent = 1456;
     }
 
     // VARIABLES

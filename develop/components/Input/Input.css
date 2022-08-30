@@ -16,19 +16,15 @@
   background-color: hsl(var(--clr-very-light-grayish-cyan));
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
   border: none;
+  color: hsl(var(--clr-very-dark-cyan));
+  padding-right: 1rem;
   outline: none;
+  text-align: end;
   width: 100%;
 }
 
 .form-control input:focus {
   box-shadow: 0 0 0 2px hsl(var(--clr-strong-cyan));
-}
-
-.amount {
-  color: hsl(var(--clr-very-dark-cyan));
-  position: absolute;
-  top: 50%;
-  right: 1.25rem;
 }
 
 .error {
