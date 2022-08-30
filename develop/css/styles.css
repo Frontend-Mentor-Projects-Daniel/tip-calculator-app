@@ -117,7 +117,7 @@ input[type='number'] {
 .center {
   box-sizing: content-box;
   margin-inline: auto;
-  max-inline-size: 60.3125rem;
+  max-inline-size: 770px;
 }
 
 /* for centering vertically */

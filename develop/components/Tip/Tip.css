@@ -2,5 +2,18 @@
   background-color: hsl(var(--clr-white));
   border-radius: 15px;
   padding: 0.9375rem;
-  max-width: 60.3125rem;
+  max-width: 48.125rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .card {
+    --space: 0;
+
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1.5rem;
+  }
 }
