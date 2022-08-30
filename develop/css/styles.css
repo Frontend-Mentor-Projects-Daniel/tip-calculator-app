@@ -107,6 +107,10 @@ input[type='number'] {
   border: 0 !important;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .header--primary {
   color: hsl(var(--clr-dark-grayish-cyan));
   display: block;

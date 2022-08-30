@@ -28,7 +28,7 @@
   flex-direction: column;
 }
 
-.card__text h3 {
+.card__text h2 {
   color: hsl(var(--clr-white));
   font-size: 0.9375rem;
 }

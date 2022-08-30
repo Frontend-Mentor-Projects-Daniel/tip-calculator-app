@@ -7,12 +7,7 @@
 }
 
 .tip-selector__title {
-  /* margin-top: 2rem; */
   margin-bottom: 1rem;
-}
-
-.wrapper {
-  /* border: 1px solid black; */
 }
 
 input[type='radio'] {
@@ -35,7 +30,7 @@ input[type='radio']:focus + label {
 }
 
 input[type='radio']:checked + label {
-  background-color: hsl(var(--clr-strong-cyan));
+  background-color: hsl(var(--clr-strong-cyan), 50%);
   color: hsl(var(--clr-very-dark-cyan));
 }
 
@@ -50,4 +45,9 @@ input[type='number'] {
   background-color: hsl(var(--clr-very-light-grayish-cyan));
   border: none;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input[type='number']:focus {
+  box-shadow: 0 0 0 2px hsl(var(--clr-strong-cyan));
 }
