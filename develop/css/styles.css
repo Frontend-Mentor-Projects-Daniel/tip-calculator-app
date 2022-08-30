@@ -107,6 +107,12 @@ input[type='number'] {
   border: 0 !important;
 }
 
+.header--primary {
+  color: hsl(var(--clr-dark-grayish-cyan));
+  display: block;
+  font-size: 15px;
+}
+
 /* for centering horizontally */
 .center {
   box-sizing: content-box;
@@ -119,7 +125,7 @@ input[type='number'] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-block-size: 98vh;
+  min-block-size: 100vh;
   padding: 2rem;
 }
 
@@ -147,11 +153,6 @@ body {
   font-family: var(--ff-space-mono);
   font-size: var(--fs-form-input);
   font-weight: var(--fw-bold);
-}
-
-@media only screen and (min-width: 48em) {
-  body {
-  }
 }
 
 /**------------------- 

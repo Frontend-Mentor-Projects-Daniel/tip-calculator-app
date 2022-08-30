@@ -1,2 +1,34 @@
 <link rel="stylesheet" href="./develop/css/styles.css" />
 <link rel="stylesheet" href="./develop/components/TipDisplay/TipDisplay.css" />
+
+<form>
+  <fieldset class="tip-selector">
+    <legend class="tip-selector__title header--primary">Select Tip %</legend>
+
+    <div class="wrapper">
+      <input class="sr-only" type="radio" name="percentages" id="5" />
+      <label for="5">5%</label>
+    </div>
+    <div class="wrapper">
+      <input class="sr-only" type="radio" name="percentages" id="10" />
+      <label for="10">10%</label>
+    </div>
+    <div class="wrapper">
+      <input class="sr-only" type="radio" name="percentages" id="15" />
+      <label for="15">15%</label>
+    </div>
+    <div class="wrapper">
+      <input class="sr-only" type="radio" name="percentages" id="25" />
+      <label for="25">25%</label>
+    </div>
+    <div class="wrapper">
+      <input class="sr-only" type="radio" name="percentages" id="50" />
+      <label for="50">50%</label>
+    </div>
+
+    <div class="wrapper">
+      <input type="number" placeholder="Custom" id="custom" />
+      <label for="custom" class="sr-only">Enter Custom Tip</label>
+    </div>
+  </fieldset>
+</form>

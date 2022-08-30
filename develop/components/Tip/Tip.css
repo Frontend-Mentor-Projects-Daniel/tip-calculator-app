@@ -1,4 +1,6 @@
 .card {
   background-color: hsl(var(--clr-white));
+  border-radius: 15px;
+  padding: 0.9375rem;
   max-width: 60.3125rem;
 }
