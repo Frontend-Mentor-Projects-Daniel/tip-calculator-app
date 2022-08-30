@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: hsl(var(--clr-very-dark-cyan));
+  border-radius: 7px;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.card__outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__output-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__text h3 {
+  color: hsl(var(--clr-white));
+  font-size: 0.9375rem;
+}
+
+.card__text span {
+  color: hsl(var(--clr-dark-grayish-cyan));
+  font-size: 0.75rem;
+}
+
+.card__price {
+  color: hsl(var(--clr-strong-cyan));
+}
+
+.btn--reset {
+  background-color: hsl(var(--clr-strong-cyan));
+  color: hsl(var(--clr-very-dark-cyan));
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.btn--reset:hover {
+  background-color: hsl(var(--clr-light-grayish-cyan));
+}
