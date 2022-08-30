@@ -17,5 +17,5 @@ function define(html) {
 
     // METHODS
   }
-  window.customElements.define('html-component-name', TipDisplay);
+  window.customElements.define('tip-display-component', TipDisplay);
 }

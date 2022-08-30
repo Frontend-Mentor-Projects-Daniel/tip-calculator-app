@@ -1,0 +1,4 @@
+.card {
+  background-color: hsl(var(--clr-white));
+  max-width: 60.3125rem;
+}

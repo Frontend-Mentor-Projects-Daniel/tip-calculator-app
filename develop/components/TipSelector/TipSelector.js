@@ -17,5 +17,5 @@ function define(html) {
 
     // METHODS
   }
-  window.customElements.define('html-component-name', TipSelector);
+  window.customElements.define('tip-selector-component', TipSelector);
 }

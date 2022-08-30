@@ -25,6 +25,16 @@
     <link rel="stylesheet" href="./develop/css/styles.css" />
 
     <!-- CUSTOM JS -->
+    <script src="./develop/components/Tip/Tip.js" type="module"></script>
+    <script src="./develop/components/Input/Input.js" type="module"></script>
+    <script
+      src="./develop/components/TipSelector/TipSelector.js"
+      type="module"
+    ></script>
+    <script
+      src="./develop/components/TipDisplay/TipDisplay.js"
+      type="module"
+    ></script>
 
     <title>Frontend Mentor | Tip calculator app</title>
 
@@ -39,11 +49,23 @@
       }
     </style>
   </head>
-  <body>
+  <body class="center cover">
+    <!--     
     Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    person Total / person Reset -->
 
-    <footer>
+    <header class="header">
+      <div class="logo">
+        <h1 class="sr-only">SPLITTER</h1>
+        <img src="./develop/assets/images/logo.svg" alt="" />
+      </div>
+    </header>
+
+    <main class="main">
+      <tip-component></tip-component>
+    </main>
+
+    <footer class="footer">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
