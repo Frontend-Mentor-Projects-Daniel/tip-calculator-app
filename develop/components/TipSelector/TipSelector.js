@@ -49,15 +49,21 @@ function define(html) {
 
         if (customInput.value !== '') {
           chosenTip = customInput.value;
+          console.log('1');
         } else if (radioInput5Percent.checked) {
+          console.log('2');
           chosenTip = radioInput5Percent.id;
         } else if (radioInput10Percent.checked) {
+          console.log('3');
           chosenTip = radioInput10Percent.id;
         } else if (radioInput15Percent.checked) {
+          console.log('4');
           chosenTip = radioInput15Percent.id;
         } else if (radioInput20Percent.checked) {
+          console.log('5');
           chosenTip = radioInput20Percent.id;
         } else if (radioInput50Percent.checked) {
+          console.log('6');
           chosenTip = radioInput50Percent.id;
         }
 
