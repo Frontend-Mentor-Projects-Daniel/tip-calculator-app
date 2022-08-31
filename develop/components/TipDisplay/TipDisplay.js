@@ -23,6 +23,19 @@ function define(html) {
     }
 
     // LIFE CYCLE METHODS
+    connectedCallback() {
+      const tipPerPerson =
+        this.shadowRoot.children[2].children[0].children[0].children[1];
+      const billPerPerson =
+        this.shadowRoot.children[2].children[0].children[1].children[1];
+      const resetButton = this.shadowRoot.children[2].children[1];
+
+      resetButton.addEventListener('click', function (e) {
+        tipPerPerson.textContent = `$0`;
+        billPerPerson.textContent = `$0`;
+      });
+    }
+
     attributeChangedCallback(name, oldValue, newValue) {
       if (oldValue === newValue) {
         return;
@@ -37,7 +50,6 @@ function define(html) {
       let tip = this.getAttribute('tip-amount') / 100;
       let people = this.getAttribute('people-amount');
 
-      console.log(tip);
       // calculate price paid per person
       if (bill != 0 && tip != 0 && people != 0) {
         // total tip

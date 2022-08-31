@@ -45,6 +45,7 @@ input[type='number'] {
   background-color: hsl(var(--clr-very-light-grayish-cyan));
   border: none;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  color: hsl(var(--clr-very-dark-cyan));
   outline: none;
 }
 
