@@ -33,7 +33,7 @@ function define(html) {
       this.addEventListener('sendBill', function (e) {
         if (e.detail.bill().id === 'people') {
           // number of people
-          displayComponent.setAttribute('total-amount', e.detail.bill().value);
+          displayComponent.setAttribute('people-amount', e.detail.bill().value);
         }
       });
 
