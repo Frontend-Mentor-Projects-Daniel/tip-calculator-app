@@ -33,6 +33,30 @@ function define(html) {
     // VARIABLES
 
     // METHODS
+    // handleSubmit(e, input) {
+    //   e.preventDefault();
+    //   this.setAttribute('bill', input.value);
+    // }
+
+    // LIFE CYCLE METHODS
+    connectedCallback() {
+      const form = this.shadowRoot.children[2];
+      const input = this.shadowRoot.children[2].children[0].children[2];
+
+      const newEvent = new CustomEvent('sendBill', {
+        bubbles: true,
+        composed: true,
+        detail: {
+          bill: () => input,
+        },
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        this.dispatchEvent(newEvent);
+      });
+    }
   }
   window.customElements.define('input-component', Input);
 }
